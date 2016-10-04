@@ -78,6 +78,7 @@ The [DateTimeOffset](xref:System.DateTimeOffset) type includes all of the functi
 
 A [DateTimeOffset](xref:System.DateTimeOffset) value is not tied to a particular time zone, but can originate from any of a variety of time zones. To illustrate this, the following example lists the time zones to which a number of [DateTimeOffset](xref:System.DateTimeOffset) values (including a local Pacific Standard Time) can belong.
 
+> [!div class="tabbedCodeSnippets"]
 ```csharp
 using System;
 using System.Collections.ObjectModel;
@@ -139,7 +140,6 @@ public class TimeOffsets
 //          (GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb
 //          (GMT+01:00) West Central Africa
 ```
-
 ```vb
 Imports System.Collections.ObjectModel
 
@@ -210,6 +210,7 @@ A [TimeSpan](xref:System.TimeSpan) value can also be used as a replacement for a
 
 The following example defines a `StoreInfo` structure that includes [TimeSpan](xref:System.TimeSpan) objects for store opening and closing times, as well as a [TimeZoneInfo](xref:System.TimeZoneInfo) object that represents the store's time zone. The structure also includes two methods, `IsOpenNow` and `IsOpenAt`, that indicates whether the store is open at a time specified by the user, who is assumed to be in the local time zone.  
 
+> [!div class="tabbedCodeSnippets"]
 ```csharp
 using System;
 
@@ -237,7 +238,6 @@ public struct StoreInfo
    }
 }
 ```
-
 ```vb
 Public Structure StoreInfo
    Dim store As String
@@ -276,6 +276,7 @@ End Structure
 
 The `StoreInfo` structure can then be used by client code like the following. 
 
+> [!div class="tabbedCodeSnippets"]
 ```csharp
 public class Example
 {
@@ -306,7 +307,6 @@ public class Example
 //       Store is open at 04:59:00: False
 //       Store is open at 18:31:00: False
 ```
-
 ```vb
 Module Example
    Public Sub Main()
