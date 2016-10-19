@@ -17,7 +17,7 @@ ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 
 .NET Core gives you a fast and modular platform for creating server applications that run on Windows, Linux and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
 
-## Getting Started
+## Prerequisites
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 2. Install [.NET Core](https://microsoft.com/net/core).
