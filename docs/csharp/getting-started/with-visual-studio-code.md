@@ -2,9 +2,9 @@
 title: Getting started with visual Studio Code | C# Guide
 description: Getting Started with Visual Studio Code
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
-author: dotnet-bot
+author: kendrahavens
 manager: wpickett
-ms.date: 08/23/2016
+ms.date: 10/21/2016
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp
@@ -13,7 +13,7 @@ ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 
 ---
 
-# Getting started with Visual Studio Code
+# Getting started with C# in Visual Studio Code
 
 .NET Core gives you a fast and modular platform for creating server applications that run on Windows, Linux and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
 
@@ -21,37 +21,44 @@ ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 2. Install [.NET Core](https://microsoft.com/net/core).
-3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) from the VS Code Marketplace.
+3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
+   * Open VS Code.
+   * Go to the Extensions Tab on the left.
+   * The C# extension is one of the first suggestions under Popular Extensions.
+   * Click install on the C# Extension.
+   * Click Enable to restart Visual Studio Code.
 
-## Hello World
+## Hello World C# Program
 
-If you'd like to get started with a simple "Hello World" program on .NET Core, follow the steps below:
+If you'd like to get started with a simple "Hello World" program on .NET Core, follow these steps:
 
 1. Open a project:
 
     * Open VS Code.
     * Go to the File Explorer Tab on the left.
-    * Open the folder you want you C# project to be in.
+    * Open the folder you want you C# project to be in. You can also choose File, Open Folder in the top menu bar.
 
   ![VSCodeOpenFolder](media/with-visual-studio-code/VSCodeOpenFolder.PNG)
 
 2. Initialize a C# project:
-    * Open the command prompt (or terminal). You can open the terminal from VS Code by typing <kbd>CTRL</kbd>+<kbd>`</kbd> (Back Tick)
+    * Open the command prompt (or terminal). You can open the integrated terminal in VS Code by typing <kbd>CTRL</kbd>+<kbd>\`</kbd> (backtick)
     * Type `dotnet new`
-    * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written.
+    * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written. For more information see the [dotnet-new](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new) topic.
 
   ![dotnetNew](media/with-visual-studio-code/dotnetNew.PNG)
 
 3. Resolve the build assets by typing `dotnet restore`
 
-    * Running `restore` pulls down the required packages declared in the `project.json` file.
+    * Running `dotnet restore` pulls down the required packages declared in the `project.json` file.
     * You'll see a new `project.lock.json` file in your project folder.
-    * This file contains information about your project's dependencies to make subsequent restores quicker.
+    * This file contains information about your project's dependencies to make subsequent restores quicker. For more information, see the [dotnet-restore](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-restore) topic.
 
   ![Image dotnet restore](media/with-visual-studio-code/dotnetRestore.PNG)
 
 4. Run the "Hello World" program by typing `dotnet run`
 
   ![dotnetRun](media/with-visual-studio-code/dotnetRun.PNG)
+  
+##See Also
 
 You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
